@@ -7,17 +7,40 @@ export default function Home() {
         <h1 className="text-2xl sm:text-3xl text-center sm:text-left">
           Faucet Interview 🥳
         </h1>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            User needs to be able to enter an address to receive funds at.
-          </li>
-          <li className="mb-2">User needs to receive funds from the faucet</li>
-          <li className="mb-2">
-            User should not have to pay for gas to receive funds from the
-            faucet!
-          </li>
-          <li>We already set ALCHEMY_API_KEY in environment variables.</li>
-        </ol>
+
+        <div>
+          <h2 className="text-md sm:text-xl text-center sm:text-left mb-4">
+            Requirements:
+          </h2>
+
+          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+            <li className="mb-2">
+              User needs to be able to enter an address to receive funds at.
+            </li>
+            <li className="mb-2">
+              User needs to receive funds from the faucet.
+            </li>
+            <li className="mb-2">
+              User should not pay for gas to receive funds from faucet - no need
+              for smart contract!
+            </li>
+          </ol>
+        </div>
+
+        {/* Callout */}
+        <div className="bg-[#f2f2f2] dark:bg-[#1a1a1a] border border-solid border-black/[.08] dark:border-white/[.145] rounded-lg p-4 sm:p-6 text-sm sm:text-base w-full">
+          <p className="text-center sm:text-left">
+            🙋{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+              ALCHEMY_API_KEY
+            </code>{" "}
+            already set in{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+              .env
+            </code>{" "}
+            file.
+          </p>
+        </div>
 
         <div className="w-full border-b border-black/[.08] dark:border-white/[.145]" />
 
