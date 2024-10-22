@@ -16,7 +16,7 @@ export default function Home() {
             User should not have to pay for gas to receive funds from the
             faucet!
           </li>
-          <li>We already added an Alchemy API key to environment variables.</li>
+          <li>We already set ALCHEMY_API_KEY in environment variables.</li>
         </ol>
 
         <div className="w-full border-b border-black/[.08] dark:border-white/[.145]" />
